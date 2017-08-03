@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView_hijri_calendar_gregorian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:text="12-Jul-2017"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView_hijri_calendar_hijri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_hijri_calendar_gregorian"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        tools:text="14,hijri 1438"
+        android:paddingStart="16dp" />
+    <TextView
+        android:id="@+id/textView_hijri_calendar_hijri_weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tools:text="something"
+        android:layout_alignParentRight="true"
+        android:textSize="32sp"
+        android:layout_marginEnd="@dimen/main_right_margin"
+        android:layout_marginRight="@dimen/main_right_margin"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>

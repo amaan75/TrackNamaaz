@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textAppearance="@style/CodeFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12-mar-2017" />
+
+
+    <TextView
+        android:id="@+id/fajrTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fajr"
+        android:textAppearance="@style/CodeFont"
+        app:layout_constraintTop_toBottomOf="@id/dateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Fajr" />
+
+    <TextView
+        android:id="@+id/fajrTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/CodeFont"
+        app:layout_constraintBaseline_toBaselineOf="@id/fajrTextView"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:text="5:00am" />
+
+
+    <TextView
+        android:id="@+id/sunriseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunrise"
+        android:textAppearance="@style/CodeFont"
+        app:layout_constraintTop_toBottomOf="@id/fajrTextView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/sunriseTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/CodeFont"
+        app:layout_constraintBaseline_toBaselineOf="@id/sunriseTextView"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:text="6:00am" />
+
+
+            <TextView
+                android:id="@+id/zuhrTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zuhr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunriseTextView"
+                android:textAppearance="@style/CodeFont" />
+
+            <TextView
+                android:id="@+id/zuhrTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/zuhrTextView"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:textAppearance="@style/CodeFont"
+                tools:text="1:00pm" />
+
+
+            <TextView
+                android:id="@+id/asrTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zuhrTextView"
+                android:textAppearance="@style/CodeFont" />
+
+            <TextView
+                android:id="@+id/asrTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/asrTextView"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:textAppearance="@style/CodeFont"
+                tools:text="5:00pm" />
+
+            <TextView
+                android:id="@+id/magribTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/asrTextView"
+                android:text="@string/magrib"
+                android:textAppearance="@style/CodeFont" />
+
+            <TextView
+                android:id="@+id/magribTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/magribTextView"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:textAppearance="@style/CodeFont"
+                tools:text="7:00pm" />
+
+            <TextView
+                android:id="@+id/ishaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/magribTextView"
+                android:text="@string/isha"
+                android:textAppearance="@style/CodeFont" />
+
+            <TextView
+                android:id="@+id/ishaTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/ishaTextView"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:textAppearance="@style/CodeFont"
+                tools:text="8:00pm" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:id="@+id/tempButton"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"/>
+</android.support.constraint.ConstraintLayout>

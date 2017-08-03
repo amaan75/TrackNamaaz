@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.islam.amaan.tracknamaaz.ui.activities.timingsactivity.locationpreferences.LocationPreference
+        android:key="@string/timings_location_preference_key"
+        android:summary="@string/timings_location_preference_summary"
+        android:title="@string/timings_location_preference" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/timings_preference_24_hour_clock_key"
+        android:summary="@string/timings_preference_24_hour_clock_summary"
+        android:title="@string/timings_preference_24_hour_clock" />
+
+    <ListPreference
+        android:key="@string/timings_methodtype_preference_key"
+        android:summary="@string/timings_methodtype_preference_summary"
+        android:title="@string/timings_methodtype_preference"
+        android:entries="@array/timings_preference_methodtype_array"
+        android:entryValues="@array/timings_preference_methodtype_values"
+        android:defaultValue="1"/>
+
+    <ListPreference
+        android:title="@string/timings_preference_school_of_thought"
+        android:key="@string/timings_preference_school_of_thought_key"
+        android:summary="@string/timings_preference_school_of_thought_summary"
+        android:entries="@array/timings_preference_school_array"
+        android:entryValues="@array/timings_preference_school_values"
+        android:defaultValue="0"/>
+
+
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_left_auxiliary_content_margin">16dp</dimen>
+    <dimen name="main_left_primary_content_margin">72dp</dimen>
+    <dimen name="main_top_primary_content_margin">32dp</dimen>
+    <dimen name="main_right_margin">16dp</dimen>
+    <dimen name="margin_location_preference_custom_text_right">48dp</dimen>
+    <dimen name="padding_location_preference_text_top">14dp</dimen>
+    <dimen name="padding_location_preference_relative_topbot">14dp</dimen>
+</resources>

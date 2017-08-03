@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrackNamaaz</string>
+    <string name="fajr">FAJR</string>
+    <string name="sunrise">SUNRISE</string>
+    <string name="zuhr">ZUHR</string>
+    <string name="asr">ASR</string>
+    <string name="magrib">MAGRIB</string>
+    <string name="isha">ISHA</string>
+
+
+    <!--For LocationSettingServiceToast-->
+    <string name="location_settings_service_permission_denied_message">
+        Can\'t Get a Lock on Position, is the location Service on?</string>
+    <string name="location_settings_service_task_last_location_null">
+        Can\'t get a Lock on Position, Start your Google maps and check if the
+        position lock is available, once done come back to the app
+    </string>
+
+
+    <!--FOR SETTINGS-->
+    <string name="settings_menu_item">Settings</string>
+
+    <!--Strings for Custom Dialog Preference-->
+    <string name="custom_dialog_positive_text">Ok</string>
+    <string name="custom_dialog_negative_text">Cancel</string>
+
+    <!--location preference for timings activity-->
+    <string name="timings_location_preference">Location</string>
+    <string name="timings_location_preference_key">timingsLocation</string>
+    <string name="timings_location_preference_summary">Click it and then press the GPS button
+        to let the app get your location </string>
+
+    <!--daylight preference for timings Settings activity-->
+    <string name="timings_preference_24_hour_clock">24Hour Clock</string>
+    <string name="timings_preference_24_hour_clock_key">24HourClock</string>
+    <string name="timings_preference_24_hour_clock_summary">Displays Salah Timings in 24 hours
+        Format </string>
+
+    <!--Method type preference for timings Settings activity-->
+    <string name="timings_methodtype_preference">Method Type</string>
+    <string name="timings_methodtype_preference_key">timingsMethodtype</string>
+    <string name="timings_methodtype_preference_summary">Choose the method using which you
+        want to calculate the namaz timings
+    </string>
+
+    <!--For choosing Asr time calculation school of thought-->
+    <string name="timings_preference_school_of_thought">School of Thought</string>
+    <string name="timings_preference_school_of_thought_key">schoolOfThought</string>
+    <string name="timings_preference_school_of_thought_summary">Choose your School
+        Of Thought(Only Affects Asr Timings)</string>
+    <!--value for string arrays namaz method types-->
+    <string name="timings_preference_hanafi_school">Hanafi</string>
+    <string name="timings_preference_shafi_school">Shafi</string>
+
+
+    <!--value for string arrays namaz method types-->
+    <string name="muslimsalah0">Shia Ithna-Ashari</string>
+    <string name="muslimsalah1">University of Islamic Sciences, Karachi</string>
+    <string name="muslimsalah2">Islamic Society of North America (ISNA)</string>
+    <string name="muslimsalah3">Muslim World League (MWL)</string>
+    <string name="muslimsalah4">Umm al-Qura, Makkah</string>
+    <string name="muslimsalah5">Egyptian General Authority of Survey</string>
+    <!--
+    <string name="muslimsalah6">Institute of Geophysics, University of Tehran</string>
+    -->
+    <string name="gps_button">GPS Button</string>
+</resources>

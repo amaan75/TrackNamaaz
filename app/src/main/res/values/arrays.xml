@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--muslimSalat NamazTimings methods-->
+    <string-array name="timings_preference_methodtype_array">
+        <item>@string/muslimsalah0</item>
+        <item>@string/muslimsalah1</item>
+        <item>@string/muslimsalah2</item>
+        <item>@string/muslimsalah3</item>
+        <item>@string/muslimsalah4</item>
+        <item>@string/muslimsalah5</item>
+    </string-array>
+
+
+    <!--School of Thought-->
+    <string-array name="timings_preference_school_array">
+        <item>@string/timings_preference_shafi_school</item>
+        <item>@string/timings_preference_hanafi_school</item>
+    </string-array>
+
+    <!--corresponsding value for those muslimsalat namazMethods-->
+    <string-array name="timings_preference_methodtype_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="timings_preference_school_values" >
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

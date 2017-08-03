@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the Custom LocationPreference Dialog -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gpsCoordinates_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_location_preference_relative_topbot"
+    android:paddingEnd="?dialogPreferredPadding"
+    android:paddingLeft="?dialogPreferredPadding"
+    android:paddingRight="?dialogPreferredPadding"
+    android:paddingStart="?dialogPreferredPadding"
+    android:paddingTop="@dimen/padding_location_preference_relative_topbot">
+
+
+    <TextView
+        android:id="@+id/gpsCoordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_location_preference_custom_text_right"
+        android:layout_marginRight="@dimen/margin_location_preference_custom_text_right"
+        android:paddingTop="@dimen/padding_location_preference_text_top" />
+
+    <ImageButton
+        android:id="@+id/gpsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/gps_button"
+        android:src="@drawable/ic_gps_fixed_black_24dp" />
+
+</RelativeLayout>
