@@ -7,6 +7,9 @@ import org.jetbrains.anko.db.*
 
 /**
  * Created by Amaan on 23-07-2017.
+ * DB Helper class for storing db operations
+ * 2 tables MuslimDay Table which stores the salah times and db hijriday table which stores
+ * corresponding hijri dates and gregorain dates
  */
 class MuslimDayDbHelper(ctx: Context = App.instance) : ManagedSQLiteOpenHelper(ctx,
         MuslimDayDbHelper.DB_NAME, null, MuslimDayDbHelper.DB_VERSION) {
@@ -32,10 +35,20 @@ class MuslimDayDbHelper(ctx: Context = App.instance) : ManagedSQLiteOpenHelper(c
                 MuslimDayTable.MIDNIGHT to TEXT,
                 MuslimDayTable.UNIXTIMESTAMP to TEXT)
 
+        db.createTable(HijriDayTable.NAME, true,
+                HijriDayTable.ID to INTEGER + PRIMARY_KEY + AUTOINCREMENT,
+                HijriDayTable.HIJRIDATE to TEXT,
+                HijriDayTable.GREGORIANDATE to TEXT,
+                HijriDayTable.HIJRIWEEKDAY to TEXT,
+                HijriDayTable.HIJRIMONTH to TEXT,
+                HijriDayTable.GREGORIANMONTH to TEXT,
+                HijriDayTable.ARABICHOLIDAYS to TEXT)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.dropTable(MuslimDayTable.NAME, true)
+        db.dropTable(HijriDayTable.NAME, true)
         onCreate(db)
     }
 }

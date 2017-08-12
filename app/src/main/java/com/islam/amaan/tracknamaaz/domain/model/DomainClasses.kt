@@ -1,5 +1,7 @@
 package com.islam.amaan.tracknamaaz.domain.model
 
+import java.util.*
+
 /**
  * Created by Amaan on 07-07-2017.
  */

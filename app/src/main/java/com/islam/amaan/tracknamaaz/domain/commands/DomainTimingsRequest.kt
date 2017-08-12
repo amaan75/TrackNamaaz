@@ -15,15 +15,15 @@ class DomainTimingsRequest(val latlon: String, val month: String, val year: Stri
                            val methodType: String, val school: String) {
 
     val LOG_TAG = "Domain Timings Request"
-
+    val timingsRequestObj = TimingsRequest(latlon, month, year, methodType, school)
 
     fun execute(): MuslimMonthCalendar {
-        val resultList = TimingsRequest(latlon, month, year, methodType, school).execute()
+        val resultList = timingsRequestObj.execute()
         return TimingsDataMapper().convertFromDataModel(resultList)
     }
 
-    fun executeHijriCalendar():MuslimHijriCalendar{
-        val resultList = TimingsRequest(latlon,month,year,methodType,school).hijriRequest()
+    fun executeHijriCalendar(): MuslimHijriCalendar {
+        val resultList = timingsRequestObj.hijriRequest()
         return HijriDataMapper().convertFromDataModel(resultList)
     }
 

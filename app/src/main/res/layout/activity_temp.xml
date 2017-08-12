@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+-->
+<android.support.v4.view.ViewPager android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:background="@android:color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android" /><!--
+</LinearLayout>
+
+<ListView android:id="@+id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/list"
-    >
-
-</ListView>
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+-->
